@@ -1,1 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leon Karssen Portfolio</title>
 
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;900&family=Patrick+Hand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">LEON KARSSEN</div>
+        <nav>
+            <a href="#home">Home</a> |
+            <a href="#portfolio">Portfolio</a> |
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+    <!-- Logo Banner -->
+    <div class="banner">
+        <img src="https://cdn.shopify.com/s/files/1/0261/5951/3654/files/about-page-image-768x639_480x480.png?v=1588095078" alt="Leon Karssen Logo">
+    </div>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>
+                Hi!<br>
+                I'm Leon, an Illustrator                           & Designer creating                                 playful characters
+                and surreal cartoon                                 worlds.
+            </h1>
+            <a href="#portfolio" class="btn">PORTFOLIO</a>
+            <a href="#about" class="btn">ABOUT ME</a>
+        </div>
+    </section>
+
+    <!-- Latest Work -->
+    <section class="latest-work">
+        <div class="container">
+            <h2>LATEST WORK</h2>
+            <div class="latest-content">
+                <img src="https://leonkarssen.com/cdn/shop/products/scowtboard1_ef1d339d-fd60-4a40-96cd-8dbd6dad3414_1200x.jpg?v=1609758217" alt="Latest Work">
+                <div class="latest-text">
+                    <p>A glimpse of the latest                            artwork and ongoing projects                        from Leon's studio.</p>
+                    <a href="#portfolio" class="btn">PORTFOLIO</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <h2>PORTFOLIO</h2>
+        <p class="portfolio-intro">
+Interested in collaborating or commissioning artwork? Leon is available
+for illustration projects, brand collaborations, and creative partnerships.
+        </p>
+
+        <!-- T-Shirts Carousel -->
+        <h3 class="carousel-title">T-SHIRTS</h3>
+        <div class="carousel-wrapper">
+            <button class="carousel-btn prev" onclick="moveSlide('tshirt-carousel', -1)">&#10094;</button>
+            <div class="carousel-track" id="tshirt-carousel">
+                <figure class="carousel-item">
+                    <img src="https://leonkarssen.com/cdn/shop/products/logoteewhite_1200x.jpg?v=1635346390" alt="T-Shirt 1">
+                    <figcaption>Playful character                                   illustration                                       printed on a                                       premium cotton T-                                   shirt.
+                   </figcaption>
+                </figure>
+                <figure class="carousel-item">
+                    <img src="https://leonkarssen.com/cdn/shop/products/painteenatural1_1200x.jpg?v=1635345084" alt="T-Shirt 2">
+                    <figcaption>A surreal and                                       humorous design                                     inspired by                                         everyday moments.                       </figcaption>
+                </figure>
+                <figure class="carousel-item">
+                    <img src="https://leonkarssen.com/cdn/shop/products/pawoffteelightpink1_400x.jpg?v=1635338860" alt="T-Shirt 3">
+                    <figcaption>Minimalist linework featuring bold colors and expressive characters.</figcaption>
+                </figure>
+                <figure class="carousel-item">
+                    <img src="https://leonkarssen.com/cdn/shop/products/howRuteewhite_400x.jpg?v=1635337653" alt="T-Shirt 4">
+                    <figcaption>A whimsical illustration blending simplicity with imaginative storytelling.</figcaption>
+                </figure>
+                <figure class="carousel-item">
+                    <img src="https://leonkarssen.com/cdn/shop/products/sickofyouteelightpink1_400x.jpg?v=1635337508" alt="T-Shirt 5">
+                    <figcaption>Streetwear-inspired artwork influenced by skate and pop culture.</figcaption>
+                </figure>
+                <figure class="carousel-item">
+                    <img src="https://leonkarssen.com/cdn/shop/products/okayteenatural1_400x.jpg?v=1635336926" alt="T-Shirt 6">
+                    <figcaption>A bold and colorful graphic designed for contemporary fashion.</figcaption>
+                </figure>
+            </div>
+            <button class="carousel-btn next" onclick="moveSlide('tshirt-carousel', 1)">&#10095;</button>
+        </div>
+
+        <!-- Skateboards Carousel -->
+        <h3 class="carousel-title">SKATEBOARDS</h3>
+        <div class="carousel-wrapper">
+            <button class="carousel-btn prev" onclick="moveSlide('skate-carousel', -1)">&#10094;</button>
+            <div class="carousel-track" id="skate-carousel">
+                <figure class="carousel-item">
+                    <img src="https://leonkarssen.com/cdn/shop/products/doubledecker1_1bda3224-52e3-4702-851c-59de8741e122_400x.jpg?v=1609757875" alt="Skateboard 1">
+                    <figcaption>A limited-edition deck featuring a bold and quirky illustration.</figcaption>
+                </figure>
+                <figure class="carousel-item">
+                    <img src="https://leonkarssen.com/cdn/shop/products/berryboideck1_17b61fba-068f-493e-9076-eb047e91606b_400x.jpg?v=1622530330" alt="Skateboard 2">
+                    <figcaption>A vibrant skateboard design inspired by urban skate culture.</figcaption>
+                </figure>
+                <figure class="carousel-item">
+                    <img src="https://leonkarssen.com/cdn/shop/products/froghugdeck1_d6d50795-4b54-4d7d-b9df-3054bbaef586_400x.jpg?v=1622539780" alt="Skateboard 3">
+                    <figcaption>A playful and surreal graphic that adds personality to every ride.</figcaption>
+                </figure>
+                <figure class="carousel-item">
+                    <img src="https://leonkarssen.com/cdn/shop/products/fatcatflydeck1_400x.jpg?v=1622530055" alt="Skateboard 4">
+                    <figcaption>A contemporary deck design blending humor with artistic expression.</figcaption>
+                </figure>
+                <figure class="carousel-item">
+                    <img src="https://leonkarssen.com/cdn/shop/products/bobaflydeck1_532df998-b487-47e4-aa42-95c8d7f656cf_400x.jpg?v=1622529992" alt="Skateboard 5">
+                    <figcaption>A striking illustration that merges street art with modern design.</figcaption>
+                </figure>
+                <figure class="carousel-item">
+                    <img src="https://leonkarssen.com/cdn/shop/products/sparkledeck1_400x.jpg?v=1622529732" alt="Skateboard 6">
+                    <figcaption>An imaginative and bold graphic crafted for creative skaters.</figcaption>
+                </figure>
+            </div>
+            <button class="carousel-btn next" onclick="moveSlide('skate-carousel', 1)">&#10095;</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>ABOUT</h2>
+            <div class="about">
+                <div class="about-text">
+                    <p>
+                        Leon Karssen is a Dutch                             illustrator known for his                           quirky humor and playful                           cartoon characters.
+                        His work features simple                           shapes, expressive                                 figures, and surreal                               situations.
+                    </p>
+                    <br>
+                    <p>
+                        His portfolio spans fashion, skate culture, and brand collaborations, blending creativity with
+                        lighthearted storytelling.
+                    </p>
+                </div>
+                <img src="https://storage.googleapis.com/thehundreds/media/2016/04/Maarten-LeonKarssen-TheHundreds9.jpg" alt="Leon Karssen">
+            </div>
+        </div>
+    </section>
+
+  <!-- Footer -->
+<footer>
+    <div class="socials">
+        <a href="https://www.instagram.com/leonkarssen/" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+    </div>
+    <div class="copyright">
+        © Leon Karssen. All rights reserved.
+    </div>
+</footer>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
