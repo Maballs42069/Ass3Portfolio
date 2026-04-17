@@ -1,4 +1,5 @@
-// Move Carousel Slides
+DOMContentLoaded{
+    // Move Carousel Slides
 function moveSlide(carouselId, direction) {
     const track = document.getElementById(carouselId);
     const slideWidth = track.children[0].offsetWidth + 20;
@@ -40,3 +41,4 @@ window.addEventListener("resize", updateCarouselFade);
 document.querySelectorAll(".carousel-track").forEach(track => {
     track.addEventListener("scroll", updateCarouselFade);
 });
+}
