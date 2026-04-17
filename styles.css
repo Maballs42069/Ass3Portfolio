@@ -1,1 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #86bcc8;
+    color: #000;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Patrick Hand', cursive;
+    letter-spacing: 2px;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.logo {
+    font-size: 28px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    margin-left: 15px;
+    font-weight: 700;
+}
+
+/* BANNER */
+.banner {
+    background: #e6e6e6;
+    padding: 20px;
+    text-align: center;
+}
+
+.banner img {
+    width: 320px;
+}
+
+/* HERO */
+.hero h1 {
+    font-size: 36px;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+
+/* BUTTONS */
+.btn {
+    background: #f47c7c;
+    color: #fff;
+    padding: 14px 32px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 800;
+    margin: 10px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #e66767;
+    transform: translateY(-2px);
+}
+
+/* LATEST WORK */
+.latest-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.latest-text {
+    max-width: 420px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.latest-content img {
+    width: 600px;
+    border-radius: 6px;
+}
+
+/* PORTFOLIO */
+.portfolio h2 {
+    font-size: 80px;
+}
+
+.portfolio-intro {
+    max-width: 900px;
+    margin: 0 auto 40px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.carousel-title {
+    font-size: 50px;
+    margin: 40px 0 20px;
+}
+
+/* CAROUSEL */
+.carousel-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: visible;
+    padding: 0 60px;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    overflow-y: visible;
+    scroll-behavior: smooth;
+    padding: 10px 0;
+    scrollbar-width: none;
+}
+
+.carousel-track::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    max-width: 460px;
+    text-align: center;
+    opacity: 0.4;
+    transform: scale(0.9);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.carousel-item img {
+    width: 100%;
+    border-radius: 10px;
+    background: #f47c7c;
+    padding: 6px;
+}
+
+.carousel-item figcaption {
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: left;
+    font-weight: 600;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+}
+
+/* Hover Enlargement Only */
+.carousel-item:hover {
+    transform: scale(1.01);
+    opacity: 1 !important;
+    z-index: 5;
+}
+
+.carousel-item:hover figcaption {
+    opacity: 1;
+}
+
+/* CAROUSEL BUTTONS */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.85);
+    border: none;
+    font-size: 28px;
+    padding: 10px 16px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.carousel-btn:hover {
+    background: #f47c7c;
+    color: #fff;
+}
+
+.carousel-btn.prev {
+    left: 10px;
+}
+
+.carousel-btn.next {
+    right: 10px;
+}
+
+/* ABOUT */
+.about {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.about-text {
+    max-width: 520px;
+    font-size: 22px; 
+    font-weight: 700;
+    line-height: 1.7;
+}
+
+.about img {
+    width: 300px;
+    border-radius: 50%;
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 150px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 0px;
+}
+
+/* Social Media Icons */
+.socials a {
+    font-size: 28px;
+    margin-right: 15px;
+    color: #000;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.socials a:last-child {
+    margin-right: 0;
+}
+
+.socials a:hover {
+    color: #f47c7c;
+    transform: scale(1.2);
+}
+
+/* MODS */
+.latest-work h2,
+#about h2 {
+    font-size: 64px;
+}
+
+
+#about h2 {
+    font-size: 90px;
+    letter-spacing: 3px;
+    margin-bottom: 80px;
+    text-align: center;
+}
