@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", (event) => {
   console.log("DOM fully loaded and parsed");
-});
+
 
 // Move Carousel Slides
 function moveSlide(carouselId, direction) {
@@ -43,4 +43,5 @@ window.addEventListener("resize", updateCarouselFade);
 
 document.querySelectorAll(".carousel-track").forEach(track => {
     track.addEventListener("scroll", updateCarouselFade);
+});
 });
